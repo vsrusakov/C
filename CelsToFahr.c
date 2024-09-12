@@ -1,16 +1,14 @@
 #include <stdio.h>
+#define LOWER -30
+#define UPPER 50 
+#define STEP 10
 
 int main()
 {
-    float fahr, cels;
-    int lower = -30, upper = 50, step = 10;
-
-    cels = lower;
+    int cels;
 
     printf("Cels    Fahr\n");
-    while (cels <= upper) {
-        fahr = (9.0 / 5.0) * cels + 32.0;
-        printf("%4.0f %7.2f\n", cels, fahr);
-        cels = cels + step;
+    for (cels = UPPER; cels >= LOWER; cels = cels - STEP) {
+        printf("%4d %7.2f\n", cels, (9.0 / 5.0) * cels + 32.0);
     }
 }
