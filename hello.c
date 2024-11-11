@@ -8,8 +8,11 @@ int main()
     // SetConsoleCP(1251);
     // SetConsoleOutputCP(1251);
 
-    printf("Привет, мир! Наконец-то я тут\rотмена");
-    printf("\rраз");
-    printf("\rдва");
+    printf("hello");
+    printf("\b");
+    printf("!\n");
+    printf("hello");
+    printf("\r");
+    printf("%%");
     return 0;
 }

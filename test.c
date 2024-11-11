@@ -4,6 +4,9 @@
 int main()
 {
     int c;
-    c = getchar();
-    printf("%d", c);
+    while((c = getchar()) != EOF) {
+        printf("%d\n", c);
+    }
+    // c = getchar();
+    // printf("%d", c);
 }
